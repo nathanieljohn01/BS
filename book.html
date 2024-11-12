@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="images/kuyamond.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuya Mhond Barbershop - Book Appointment</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<!-- Header Section -->
+<header>
+    <div class="navbar">
+        <div class="navbar-left">
+            <div class="logo-container">
+                <img src="images/kuyamond.jpg" alt="Barbershop Logo" class="logo">
+            </div>
+            <h1 class="header-title">Kuya Mhond Barbershop</h1>
+        </div>
+        <nav class="navbar-links">
+            <ul>
+                <li><a href="barbeshop-website.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="book.html">Book Appointment</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+<section id="booking-section">
+    <form id="booking-form">
+        <h2>Book Your Appointment</h2>
+        
+        <label for="name">Your Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+
+        <label for="service">Selected Service</label>
+        <input type="text" id="service" readonly required>
+
+        <label for="price">Service Price</label>
+        <input type="text" id="price" readonly>
+
+
+        <div class="add-ons">
+            <label>
+                <input type="checkbox" id="shave" value="100" onchange="updateTotal()"> Shave (+₱100)
+            </label>
+            <label>
+                <input type="checkbox" id="wash" value="200" onchange="updateTotal()"> Hair Wash (+₱200)
+            </label>
+        </div>
+
+        <label for="date">Select Date and Time</label>
+        <input type="datetime-local" id="date" required>
+
+        <label for="total">Total Price</label>
+        <input type="text" id="total" readonly>
+
+        <button type="submit">Book Appointment</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2024 Kuya Mhond Barbershop. All rights reserved.</p>
+</footer>
+
+<script src="scripts.js"></script>
+
+</body>
+</html>

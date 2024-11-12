@@ -1,0 +1,495 @@
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 200;
+}
+
+blockquote {
+    border-left-color: #4fc3f7; /* Blue lighten-2 border */
+}
+
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Section */
+header {
+    background-color: #1d1d1d;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+/* Style the header title */
+.header-title {
+    font-size: 2.5rem; /* Customize size */
+    font-weight: bold;
+    color: white;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('images/mondbarbershop.jpg'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.hero-content {
+    max-width: 800px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5); /* Adds a dark overlay for readability */
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+/* Button in Hero Section */
+.hero button {
+    background-color: #f44336; /* Adjusted to give prominence */
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.hero button:hover {
+    background-color: #d32f2f;
+    transform: translateY(-2px);
+}
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1d1d1d;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between logo and title */
+}
+
+.logo-container {
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+}
+
+.logo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header-title {
+    font-size: 1.8rem;
+    color: white;
+    font-weight: 700;
+    margin: 0;
+}
+
+.navbar-links ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 5px 10px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar-links ul li a:hover {
+    color: #f44336;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+/* Services Section */
+#services {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+    border-radius: 8px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+#services h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.2rem;
+    color: #333;
+    font-weight: 700;
+}
+
+.service-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px; /* Increased gap for more spacing */
+}
+
+.service {
+    text-align: center;
+    padding: 25px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px; /* Slightly rounder corners for modern look */
+    width: 280px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.service-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.service h3 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.service p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Price Text */
+.service .price {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Button Styles */
+.service button {
+    background-color: #f44336; /* Use a more vibrant color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px; /* Rounded button for a softer look */
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.service button:hover {
+    background-color: #d32f2f;
+    transform: translateY(-2px);
+}
+/* Booking Section */
+#booking-section {
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: #fefefe;
+    padding: 40px 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#booking-form {
+    margin-bottom: 40px; /* Adds space between the form and footer */
+}
+
+#booking-form h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.2rem;
+    color: #333;
+    font-weight: 700;
+}
+
+#booking-form label {
+    display: block;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+    margin-top: 15px;
+    text-align: left;
+}
+
+#booking-form input[type="text"],
+#booking-form input[type="datetime-local"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    width: 100%;
+    background-color: #f44336;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-bottom: 20px; /* Adds space below the button */
+}
+
+#booking-form input:focus {
+    border-color: #f44336;
+    outline: none;
+}
+
+.add-ons {
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+    justify-content: center;
+}
+
+.add-ons label {
+    font-size: 1rem;
+    color: #666;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.add-ons input[type="checkbox"] {
+    transform: scale(1.2);
+}
+
+/* Button Styles */
+#booking-form button {
+    width: 100%;
+    background-color: #f44336;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+#booking-form button:hover {
+    background-color: #d32f2f;
+}
+
+/* Confirmation Message */
+#confirmation {
+    background-color: #e0ffe0;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+#contact {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+    margin: 40px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+#contact h2 {
+    font-size: 2rem; /* Increase title size */
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-info {
+    margin-top: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px; /* Adds more space between icon and text */
+    font-size: 1.4rem; /* Larger font for contact details */
+    color: #333;
+    margin-bottom: 20px; /* Increase spacing between items */
+}
+
+.contact-icon {
+    font-size: 2rem; /* Increase icon size */
+    color: black; /* Facebook blue */
+}
+
+
+.contact-item a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-item a:hover {
+    color: black;
+}
+
+/* Footer */
+footer {
+    background-color: #1d1d1d;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    margin-top: auto;
+}
+footer p {
+    font-size: 14px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Style the add-ons section for alignment */
+.add-ons {
+    margin-top: 5px;
+    padding: 10px 0;
+    display: flex;
+    gap: 10px;
+}
+
+.add-ons label {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Adds some space between the checkbox and the text */
+    cursor: pointer;
+    color: #333;
+}
+
+.add-ons input[type="checkbox"] {
+    transform: scale(1.5); /* Make the checkbox slightly larger */
+}
+
+/* Style for the rest of the form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    width: 100%;
+}
+
+form button {
+    padding: 10px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #d32f2f;
+}
+
+/* Styling for total price input */
+#total {
+    font-weight: bold;
+    color: black;
+}
+
+#facebook-link {
+    font-weight: bold;
+    color: #3b5998;
+    transition: color 0.3s ease;
+}
+
+#facebook-link:hover {
+    color: #1d3557; /* Darker blue on hover */
+}
+
+#facebook-link:active {
+    transform: scale(0.9); /* Slightly shrink the link on click */
+}
+
+.facebook-icon {
+    color: #3b5998; /* Facebook blue color */
+}
+
+/* Responsive Adjustment for Mobile */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar-left {
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .navbar-links ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

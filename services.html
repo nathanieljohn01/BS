@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="images/kuyamond.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuya Mhond Barbershop - Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+
+<header>
+    <div class="navbar">
+        <div class="navbar-left">
+            <div class="logo-container">
+                <img src="images/kuyamond.jpg" alt="Barbershop Logo" class="logo">
+            </div>
+            <h1 class="header-title">Kuya Mhond Barbershop</h1>
+        </div>
+        <nav class="navbar-links">
+            <ul>
+                <li><a href="barbeshop-website.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="book.html">Book Appointment</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section id="services">
+    <h2>Our Services</h2>
+    <div class="service-list">
+       
+        <div class="service">
+            <img src="images/midfade.jpg" alt="Mid Fade" class="service-image">
+            <h3>Mid Fade</h3>
+            <p>Classic mid fade haircut style for men.</p>
+            <p>Price: ₱200</p>
+            <button onclick="selectHaircut('Mid Fade', 200)">Select Mid Fade</button>
+        </div>
+   
+        <div class="service">
+            <img src="images/lowfade1.jpg" alt="Low Fade" class="service-image">
+            <h3>Low Fade</h3>
+            <p>Low fade haircut for a sharp, clean look.</p>
+            <p>Price: ₱200</p>
+            <button onclick="selectHaircut('Low Fade', 200)">Select Low Fade</button>
+        </div>
+
+        <div class="service">
+            <img src="images/mullet.jpg" alt="Mullet Low Taper" class="service-image">
+            <h3>Mullet Mid Taper</h3>
+            <p>Edgy Mullet with a mid taper style.</p>
+            <p>Price: ₱250</p>
+            <button onclick="selectHaircut('Mullet Low Taper', 250)">Select Mullet Low Taper</button>
+        </div>
+     
+        <div class="service">
+            <img src="images/buzzcut.jpg" alt="Buzz Cut" class="service-image">
+            <h3>Buzz Cut</h3>
+            <p>Short and most trending buzz cut style.</p>
+            <p>Price: ₱200</p>
+            <button onclick="selectHaircut('Buzz Cut', 200)">Select Buzz Cut</button>
+        </div>
+       
+        <div class="service">
+            <img src="images/pompadour.jpg" alt="Pompadour" class="service-image">
+            <h3>Pompadour</h3>
+            <p>Stylish pompadour with a voluminous top.</p>
+            <p>Price: ₱300</p>
+            <button onclick="selectHaircut('Pompadour', 300)">Select Pompadour</button>
+        </div>
+    
+        <div class="service">
+            <img src="images/undercut.jpg" alt="Undercut" class="service-image">
+            <h3>Undercut</h3>
+            <p>Sharp undercut for a modern, trendy look.</p>
+            <p>Price: ₱200</p>
+            <button onclick="selectHaircut('Undercut', 200)">Select Undercut</button>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Kuya Mhond Barbershop. All rights reserved.</p>
+</footer>
+
+<script>
+ 
+    function selectHaircut(service, price) {
+        
+        window.location.href = `book.html?service=${encodeURIComponent(service)}&price=${price}`;
+    }
+    </script>
+<script src="scripts.js"></script>
+
+</body>
+</html>
